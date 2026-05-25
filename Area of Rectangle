@@ -1,0 +1,4 @@
+l=float(input())
+w=float(input())
+area=l*w
+print(f"{area:.2f}")
