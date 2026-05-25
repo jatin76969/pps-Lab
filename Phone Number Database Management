@@ -1,0 +1,17 @@
+contacts={}
+n=int(input())
+for i in range(n):
+	contact=input().split()
+	if contact[0]=="ADD":
+		name=contact[1]
+		no=contact[2]
+		contacts[name]=no
+	elif contact[0]=="REMOVE":
+		name=contact[1]
+		contacts.pop(name, None)
+	elif contact[0]=="DISPLAY":
+		if not contacts:
+			print("No contacts")
+		else:
+			for i in sorted(contacts):
+				print(f"{i}: {contacts[i]}")
