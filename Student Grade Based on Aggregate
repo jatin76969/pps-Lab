@@ -1,0 +1,15 @@
+marks=list(map(int,input().split()))
+sum=sum(marks)
+percent=sum/4
+print(sum)
+print(f"{percent:.2f}")
+if (percent>75):
+	print("Distinction")
+elif (percent>=60):
+	print("First Division")
+elif (percent>=50):
+	print("Second Division")
+elif (percent>=40):
+	print("Third Division")
+else:
+	print("Fail")
